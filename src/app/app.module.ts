@@ -7,6 +7,18 @@ import { LoginComponent } from './login/login.component';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatCardModule } from '@angular/material/card';
+import { Routes, RouterModule } from '@angular/router';
+import { ProductListComponent } from './product/product-list/product-list.component';
+const routes: Routes = [
+  {
+    path: 'product',
+    component: ProductListComponent
+  },
+  {
+    path: 'login',
+    component: LoginComponent
+  }
+];
 @NgModule({
   declarations: [AppComponent, LoginComponent],
   imports: [
@@ -15,7 +27,8 @@ import { MatCardModule } from '@angular/material/card';
     MatFormFieldModule,
     BrowserAnimationsModule,
     MatInputModule,
-    MatCardModule
+    MatCardModule,
+    RouterModule.forRoot(routes)
   ],
   providers: [],
   bootstrap: [AppComponent]
