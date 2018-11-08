@@ -1,0 +1,29 @@
+{
+  "product": [
+    {
+      "id": 1,
+      "name": "iPhone XR",
+      "description": "apple smartphone"
+    },
+    {
+      "id": 1,
+      "name": "Samsung A5",
+      "description": "lorem issum"
+    },
+    {
+      "id": 1,
+      "name": "Asus Zenphone 5",
+      "description": "lorem issum"
+    },
+    {
+      "id": 1,
+      "name": "ABCSASD",
+      "description": "lorem issum"
+    },
+    {
+      "id": 1,
+      "name": "akshdijjl ",
+      "description": "typicode"
+    }
+  ]
+}
