@@ -1,21 +1,27 @@
 <div class="container">
   <div class="col-md-8">
     <header>Product list</header>
+
     <div class="col-md-8">
       <table class="table">
         <thead>
           <tr>
             <th>ID</th>
+
             <th>Product name</th>
+
             <th>Description</th>
           </tr>
         </thead>
+
         <tbody>
           <tr *ngFor="let product of products">
             <td>
               <a href="#">{{ product.id }}</a>
             </td>
+
             <td>{{ product.name }}</td>
+
             <td>{{ product.description }}</td>
           </tr>
         </tbody>

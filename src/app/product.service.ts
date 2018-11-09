@@ -9,7 +9,7 @@ export class ProductService {
   private readonly URL = 'http://localhost:3000/product';
   constructor(private http: HttpClient) {}
 
-  getUser() {
+  getProduct() {
     return this.http.get<Product[]>(this.URL);
   }
 }

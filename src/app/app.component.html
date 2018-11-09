@@ -1,4 +1,5 @@
 <ul>
-  <li><a routerLink="/product">Product</a></li>
+  <li><a [routerLink]="['/product', 'list']">Product List</a></li>
   <li><a routerLink="/login">Login</a></li>
 </ul>
+<router-outlet></router-outlet>

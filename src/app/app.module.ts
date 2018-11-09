@@ -8,12 +8,9 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatCardModule } from '@angular/material/card';
 import { Routes, RouterModule } from '@angular/router';
-import { ProductListComponent } from './product/product-list/product-list.component';
+import { ProductModule } from './product/product.module';
+import { HttpClientModule } from '@angular/common/http';
 const routes: Routes = [
-  {
-    path: 'product',
-    component: ProductListComponent
-  },
   {
     path: 'login',
     component: LoginComponent
@@ -26,9 +23,11 @@ const routes: Routes = [
     ReactiveFormsModule,
     MatFormFieldModule,
     BrowserAnimationsModule,
+    HttpClientModule,
     MatInputModule,
     MatCardModule,
-    RouterModule.forRoot(routes)
+    RouterModule.forRoot(routes),
+    ProductModule
   ],
   providers: [],
   bootstrap: [AppComponent]
