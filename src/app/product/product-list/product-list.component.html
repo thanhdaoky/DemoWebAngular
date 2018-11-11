@@ -1,8 +1,13 @@
 <div class="container">
   <div class="col-md-8">
-    <header>Product list</header>
+    <!-- custom upload file button -->
+    <div class="col-md-1 float-right">
+      <label class="btn btn-primary" for="file-upload">Upload file</label>
+      <input type="file" id="file-upload" />
+    </div>
+    <header><h2>Product list</h2></header>
 
-    <div class="col-md-8">
+    <div class="col-md-12">
       <table class="table">
         <thead>
           <tr>
@@ -23,6 +28,8 @@
             <td>{{ product.name }}</td>
 
             <td>{{ product.description }}</td>
+            <td><button class="btn btn-primary">Update</button></td>
+            <td><button class="btn btn-danger">Delete</button></td>
           </tr>
         </tbody>
       </table>
